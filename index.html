@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Test CSS 3D</title>
+</head>
+<style type="text/css">
+    #flipcard {
+        -webkit-transform-style: preserve-3d;
+        -webkit-transition: -webkit-transform 1s;
+    }
+
+    #flipcard-container:hover #flipcard {
+        -webkit-transform: rotateY(180deg);
+    }
+
+    .face {
+        -webkit-backface-visibility: hidden;
+    }
+
+    .face.back {
+        -webkit-transform: rotateY(180deg);
+    }
+</style>
+<body>
+    <div id="flipcard-container">
+        <div id="flipcard">
+            <div class="front face">
+                Hola, esto es un mensaje
+            </div>
+            <div class="back face">
+                <img src="image/ship it squirrel.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
