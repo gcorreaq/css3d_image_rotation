@@ -1,32 +1,27 @@
 <html>
 <head>
     <title>Test CSS 3D</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css" rel="stylesheet">
 </head>
 <style type="text/css">
-    #flip-card {
-        width: 100%;
-        height: 100%;
+    img {
+        width: 200px;
+        height: 150px;
+        margin: 4px;
+    }
+
+    .flip-card {
+        width: 200px;
+        height: 150px;
+        float: left;
+        overflow: hidden;
         -webkit-transform-style: preserve-3d;
         -webkit-transition: -webkit-transform 1s;
     }
 
-    #flip-container {
-        position: relative;
-        margin: 1em;
-        width: 400px;
-        height: 370px;
-    }
-
-    #flip-container:hover #flip-card {
+    .flip {
         -webkit-transform: rotateY(180deg);
-    }
-
-    .face.back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-transform: rotateY(180deg);
-        -webkit-backface-visibility: hidden;
     }
 
     .face {
@@ -35,17 +30,185 @@
         height: 100%;
         -webkit-backface-visibility: hidden;
     }
+
+    .face.back {
+        -webkit-transform: rotateY(180deg);
+        -webkit-backface-visibility: hidden;
+    }
 </style>
 <body>
-    <div id="flip-container">
-        <div id="flip-card">
-            <div class="front face">
-                <img src="image/ship_it_squirrel.png">
-            </div>
-            <div class="back face">
-                <img src="image/do_it_faggot.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="span14 offset1">
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="front face">
+                        <img src="image/ship_it_squirrel.png">
+                    </div>
+                    <div class="back face">
+                        <img src="image/do_it_faggot.jpg">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <a class="activator" href="#">LOOK AT ME!</a>
 </body>
+<script type="text/javascript">
+function oddFlips() {
+    var oddFlipCards = $('.flip-card:odd');
+    oddFlipCards.addClass('flip');
+    setTimeout(function () {
+        oddFlipCards.removeClass('flip');
+    }, 5000);
+    setTimeout("oddFlips()", 10000);
+}
+
+function evenFlips() {
+    var evenFlipCards = $('.flip-card:even');
+    
+    evenFlipCards.addClass('flip');
+
+    setTimeout(function () {
+        evenFlipCards.removeClass('flip');
+    }, 5000);
+    setTimeout("evenFlips()", 10000);
+}
+
+$(document).ready(function () {
+
+    oddFlips();
+    //evenFlips();
+    setTimeout("evenFlips()", 5000);
+
+    $('a.activator').hover(
+        function () {
+            $('.flip-card').addClass('flip');
+        },
+        function () {
+            $('.flip-card').removeClass('flip');
+        }
+    )
+})
+</script>
 </html>
